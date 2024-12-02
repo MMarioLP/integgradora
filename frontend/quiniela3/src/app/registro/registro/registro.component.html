@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2><span>Registro</span></h2>
+		</div>		
+		<form class="form__reg" action="">
+
+     
+        <input class="input" [(ngModel)]="usuario.userName" type="text" name="userName"placeholder="Nombre de usuario" required autofocus>
+     
+       
+          <input class="input" [(ngModel)]="usuario.nomUsuario" type="text" name="nomUsuario"placeholder="Nombre Completo" required/>
+       
+          <input class="input" [(ngModel)]="usuario.appPaterno" type="text" name="appPaterno" placeholder="appPaterno" required/>
+       
+        
+          <input  class="input" [(ngModel)]="usuario.appMaterno" type="text" name="appMaterno" placeholder="appMaterno" required/>
+       
+          <input  class="input" [(ngModel)]="usuario.numTelefono"type="text" name="numTelefono"placeholder="telefono" required/>
+       
+          <input class="input" [(ngModel)]="usuario.correoElec" type="text" name="correoElec" placeholder="email"required/>
+       
+          <input class="input"  [(ngModel)]="usuario.edad" type="number" name="edad" placeholder="edad"required/>
+       
+          <input class="input" [(ngModel)]="usuario.clave" type="number" name="clave"placeholder="clave"equired/>
+       
+          <input class="input" [(ngModel)]="usuario.contrasenia" type="text" name="contrasenia"placeholder="contraseña  "equired />
+        
+          <select  class="input" [(ngModel)]="usuario.rol" name="rol" type="text">
+            <option value="Alumno">Usuario</option>
+            <option value="Profesor">Administrador</option>
+          </select>
+       
+            <div class="btn__form">
+          
+              <button (click)="Registrar(usuario)" class="btn__submit">Registrar</button>
+            	
+            </div>
+            <div class="btn__form">
+          
+              <button (click)="Regresar()" class="btn__submit">Regresar</button>
+              
+            	
+            </div>
+		</form>
+	</div>
+	
+</body>
+</html>

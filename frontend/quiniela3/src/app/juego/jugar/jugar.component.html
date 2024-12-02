@@ -1,0 +1,36 @@
+
+<body>
+    
+
+<div class="container col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Realizar Apuestas</h3>
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label >Numero de tarjeta:</label>
+            <input [(ngModel)]="paga.noTarjeta" name="noTarjeta" type="number" class="form-control">
+          </div>
+          <div class="form-group">
+            <label >Monto:</label>
+            <input [(ngModel)]="paga.monto" name="monto" type="number" class="form-control">
+          </div>
+         
+          <div class="form-group">
+            <label >Caballo:</label>
+            <input [(ngModel)]="horse.idcaballo" name="idcaballo"type="idcaballo" class="form-control">
+          </div>
+          
+          
+         
+          <button (click)="Apostar(paga)"  class="btn btn-primary" type="submit">Apostar</button>
+
+        </form>
+        
+      </div>
+      </div>
+      </div>
+    </body>
+ 
